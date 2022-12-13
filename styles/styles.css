@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 /*////////////////////////////////////////////////////////////////////////
+grijs #899CA0 en donkergroen #1C2B32
+
 Table of Contents:
+*/
+ */
     1. Global Styles
     2. Typografie
     3. Areas
@@ -9,41 +16,160 @@ Table of Contents:
         3.4 Faq
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
-
+*/
 
 
 /*////////////////////////
     1. Global Styles
-////////////////////////*/
+/////////////////////////*/
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
+a:link {
+    color: #899CA0;
+}
 
+a:hover {
+    color: #899CA0;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    color: white;
+    background-color: #1C2B32;
+    border-radius: 30px;
+    padding: 15px;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
-
-
 /*///////////// 3.1 Header /////////////*/
 
+header {
+    background-image: url("../assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0 250px 0;
+    text-align: center;
+}
 
+h1 {
+    font-size: 70px;
+    margin: -20px 0 -10px 0;
+}
+
+.header-section-container p {
+    font-size: 9px;
+    margin-bottom: 20px;
+}
+
+.header-section-container input {
+    border-radius: 50px 0 0 50px;
+    font-family: inherit;
+    padding: 15px;
+    background: rgba(0,0,0,0);
+}
+
+::placeholder {
+    color: black;
+}
+
+.header-section-container button {
+    border-radius: 0 50px 50px 0;
+    margin-left: -5px;
+}
 
 /*///////////// 3.2 Testimonial /////////////*/
 
+.ds-article fieldset {
+    font-size: 9px;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 1px 1px 30px 1px #899CA0;
+}
 
+.main-section {
+    max-width: 1000px;
+    margin: 0 25% 0 25%;
+}
+
+.ds-article h2 {
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+}
+
+.left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.figure-text figure {
+    display: flex;
+}
+
+.figure-text p {
+    padding-left: 25px;
+}
+
+.john {
+    margin-top: 50px;
+}
 
 /*///////////// 3.3 Support /////////////*/
 
+.callcenter {
+    max-width: 100%;
+    border-radius: 8px;
+}
 
+.ds-article figcaption {
+    font-size: 9px;
+    padding: 20px 0 20px 0;
+}
 
 /*///////////// 3.4 Faq /////////////*/
 
+details > summary {
+    cursor: pointer;
+}
 
+details > p {
+    font-family: inherit;
+    color: white;
+    background-color: #899CA0;
+    padding: 30px;
+    border-radius: 8px
+}
 
 /*///////////// 3.5 Footer /////////////*/
+
+.copyright {
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    background-color: #1C2B32;
+    margin-top: 50px;
+    padding: 25px 0 25px 0;
+}
